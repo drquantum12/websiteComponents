@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <title>Dr Quantum login page</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./login.css">
     <script src="https://kit.fontawesome.com/9601f9ca89.js" crossorigin="anonymous"></script>
+    <script src="./login2.js"></script>
 </head>
 
 <body>
     <section>
         <div class="form-box">
             <div class="form-value">
-               <form action="">
                 <h2>Login</h2>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email" id="user" value="" autocomplete="off">
                  </div>
                  <div class="inputbox">
-                 <input type="password" placeholder="password">
-                
+                 <input type="password" placeholder="password" id="pass" value="">
+               
                </div>
                 
               <div class="forget">
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button>LOGIN</button>
+               <input type="submit" name="" value="LOGIN" onclick="validation()"></input>
                 <div class="log">
                 <p>or Login with</p>
                 </div>
@@ -39,7 +39,6 @@
 
                 </label>
                 </div>
-               </form>
             </div>
         </div>
     </section>

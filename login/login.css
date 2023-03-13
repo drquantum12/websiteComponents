@@ -12,7 +12,7 @@ section{
     width: 100%;
 
     /* background: url('pix.png')no-repeat;*/
-    background: -webkit-linear-gradient(right,#154766,#4e8eb5);;
+    background: linear-gradient(rgba(33, 34, 38, 0.69),rgba(15, 14, 17, 0.942)),url(../assets/space.jfif);;
     background-position: center;
     background-size: cover;
 }
@@ -20,8 +20,8 @@ section{
     position: relative;
     width:400px;
     height: 450px;
-    background:whitesmoke;
-    border:2px solid rgba(255,255,255,0.5);
+    background:transparent;
+    border:2px solid rgba(41, 39, 39, 0.5);
     border-radius:20px;
     backdrop-filter: blur(15px);
     display: flex;
@@ -31,7 +31,7 @@ section{
 h2{
      font-size: 2em;
      margin-top: 44px;
-     color: black;
+     color: rgb(255, 253, 253);
      text-align: center;
      
 }
@@ -39,22 +39,17 @@ h2{
     position: relative;
     margin: 30px 0;
     width: 310px;
-    border-bottom:2px solid grey;
+    border-bottom:2px solid rgb(255, 243, 243);
 }
-
 .inputbox label{
     position:absolute;
     top:50%;
     left:5px;
     transform:translateY(-50%);
-    color:black;
+    color:rgb(255, 242, 242);
     font-size:1em;
     pointer-events:none;
     transition: .5s;
-}
-input:focus ~ label,
-input:valid ~ label{
-    top: -5px;
 }
 .inputbox input{
     width:100%;
@@ -63,8 +58,6 @@ input:valid ~ label{
     border: none;
     outline: none;
     font-size: 1em;
-    padding: 0 35px 0 5px;
-    color:black;
 }
 .inputbox ion-icon{
     position:absolute;
@@ -91,7 +84,7 @@ input:valid ~ label{
 .forget{
     margin:-15px 0 15px;
     font-size: .9em;
-    color: black;
+    color: rgb(255, 249, 249);
     display: flex;
     justify-content: right;
 }    
@@ -99,25 +92,29 @@ input:valid ~ label{
     margin-right: 3px;
 }
 .forget label a{
-    color: black;
+    color: rgb(255, 246, 246);
      text-decoration:underline;
 }
-button{
+input{
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    background: -webkit-linear-gradient(right,#154766,#3283b6);
+    border: 2px solid #fffefe;
+    background: -webkit-linear-gradient(right,#000000,#6b2f8d);
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 1em;
     color: aliceblue;
     font-weight:600;
+    user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; /*Firefox*/
 
 }
 .log{
     font-size: 1em;
-    color: black;
+    color: rgb(255, 250, 250);
     text-align: center;
     margin:25px 0 10px;
 
@@ -132,7 +129,7 @@ button{
     margin-top: 1px;
     text-align:center;
     text-decoration:none;
-    color:#000;
+    color:#fef8f8;
     
 }
 .social-links a fa-brands{
@@ -141,17 +138,22 @@ button{
 }
 .register{
     font-size: .9em;
-    color: black;
+    color: rgb(255, 246, 246);
     text-align: center;
     margin: 25px 0 33px;
 }
 .register p a{
     text-decoration:none;
-    color:black;
+    color:rgb(248, 238, 238);
     font-weight: 600;
 }
 .register p a:hover{
     text-decoration: underline;
+}
+
+a{
+    text-decoration: None;
+    color: aliceblue;
 }
 
 
